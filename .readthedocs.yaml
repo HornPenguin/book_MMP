@@ -7,10 +7,7 @@ build:
 
 python:
   install:
-    - method: pip
-      path: .
-      extra_requirements:
-        - sphinxcontrib-proof
+    - requirements: requirements.txt
 
 
 
