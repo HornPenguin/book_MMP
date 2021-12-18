@@ -142,16 +142,41 @@
 아래 행에는 각 열의 첫번째 명제가 가질 수 있는 진리 값을 기술한다.
 독립적인 명제들을 왼쪽에 오른쪽에 해당 명제들로 만들어진 복합 명제를 기술한다.</p>
 <p>예를 들어서 두 개의 명제 <span class="math notranslate nohighlight">\(p, q\)</span> 와 이 둘로 이루어진 복합 명제 <span class="math notranslate nohighlight">\(r\)</span> 이 있다면, 다음과 같이 쓸 수 있다.</p>
+<table class="colwidths-auto docutils align-default" id="id12">
+<caption><span class="caption-text">진리표 예시</span><a class="headerlink" href="#id12" title="Permalink to this table"></a></caption>
+<tbody>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(q\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(r\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><span class="math notranslate nohighlight">\(r\)</span> 이 있는 열의 각 행에는 <span class="math notranslate nohighlight">\(p,q\)</span> 의 진리값에 따른 <span class="math notranslate nohighlight">\(r\)</span> 의 진리값이 들어간다.
 어느 한 복합 명제 <span class="math notranslate nohighlight">\(r\)</span> 이 <span class="math notranslate nohighlight">\(p_1, p_2, p_3, \dots p_n\)</span> 의 독립 명제들로 이루어져 있다면,
-진리표는 총 <span class="math notranslate nohighlight">\(2^n+1\)</span> 개의 행을 가지게 된다 <a href="#id20"><span class="problematic" id="id2">[#진리표]_</span></a> .
+진리표는 총 <span class="math notranslate nohighlight">\(2^n+1\)</span> 개의 행을 가지게 된다 <a class="footnote-reference brackets" href="#id11" id="id2">1</a> .
 따라서 진리표는 적은 독립 명제들을 가진 복합 명제의 판정에는 사용가능하지만,
 많은 명제들을 가지고 있는 복합 명제의 판정에는 비효율적이다.</p>
 </section>
 <section id="logic-operator">
 <h3>논리 연산자(Logic operator)<a class="headerlink" href="#logic-operator" title="Permalink to this headline"></a></h3>
 <p>기초적인 논리 연산자에 <strong>부정</strong> (negation), <strong>연언</strong> (conjunction) 그리고 <strong>선언</strong> (disjunction)이 있다.</p>
-<div class="proof proof-type-definition" id="id11">
+<div class="proof proof-type-definition" id="id13">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -160,13 +185,15 @@
         
     </div><div class="proof-content">
 <p>명제 <span class="math notranslate nohighlight">\(p\)</span> 에 대해, ” <span class="math notranslate nohighlight">\(p\)</span> 의 부정”은 <span class="math notranslate nohighlight">\(\neg p\)</span> 로 표기하며, ” <span class="math notranslate nohighlight">\(p\)</span> 가 아닌 경우”를 의미한다.</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
-</tr>
-</thead>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <tbody>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></td>
+</tr>
 <tr class="row-even"><td><p>T</p></td>
 <td><p>F</p></td>
 </tr>
@@ -180,7 +207,7 @@
 단순히 <span class="math notranslate nohighlight">\(\text{not } p\)</span> 로 표기하기도 한다.
 <span class="math notranslate nohighlight">\(\overline{p}\)</span> 는 집합 기호에서 여집합이나 켤례 복소수의 표기에도 쓰이는 기호라 혼동의 우려가 있어 사용하지 않았다.
 <span class="math notranslate nohighlight">\(!p\)</span> 는 프로그래밍 언어등에서 부정을 나타내는 데 흔히 쓰인다. 일반적으로 <span class="math notranslate nohighlight">\(NOT\)</span>  연산자라 부른다.</p>
-<div class="proof proof-type-definition" id="id12">
+<div class="proof proof-type-definition" id="id14">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -190,34 +217,37 @@
     </div><div class="proof-content">
 <p>명제 <span class="math notranslate nohighlight">\(p,q\)</span> 에 대해, ” <span class="math notranslate nohighlight">\(p,q\)</span> 의 연언”은 <span class="math notranslate nohighlight">\(p \wedge q\)</span> 로 표기하며,
 ” <span class="math notranslate nohighlight">\(p\)</span> 가 참이며, <span class="math notranslate nohighlight">\(q\)</span> 도 참이다.”를 의미한다.</p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(p \wedge q\)</span></p></th>
-</tr>
-</thead>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 31%" />
+<col style="width: 38%" />
+</colgroup>
 <tbody>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(q\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(p \wedge q\)</span></p></td>
+</tr>
 <tr class="row-even"><td><p>T</p></td>
 <td><p>T</p></td>
-<td><p>F</p></td>
+<td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
 <td><p>F</p></td>
-<td><p>T</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>F</p></td>
-<td><p>F</p></td>
 <td><p>T</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-odd"><td><p>F</p></td>
 <td><p>F</p></td>
-<td><p>T</p></td>
+<td><p>F</p></td>
 </tr>
 </tbody>
 </table>
 </div></div><p>단순히, <span class="math notranslate nohighlight">\(p \text{ and } q\)</span> 나 <span class="math notranslate nohighlight">\(p \&amp; q\)</span> 로 표기하기도 한다. 일반적으로 <span class="math notranslate nohighlight">\(AND\)</span>  연산자라 부른다.</p>
-<div class="proof proof-type-definition" id="id13">
+<div class="proof proof-type-definition" id="id15">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -261,7 +291,7 @@
 이러한 성질을 <strong>포괄적</strong> (inclusive)이라 부른다.
 별도의 서술이 없을 경우 논리학에서 선언은 모두 포괄적으로 다루어진다.
 베타적 의미의 선언은 따로 정의되어 있다. 일반적으로 <span class="math notranslate nohighlight">\(OR\)</span>  연산자라 부른다.</p>
-<div class="proof proof-type-definition" id="id14">
+<div class="proof proof-type-definition" id="id16">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -304,7 +334,7 @@
 <section id="conditional-statement">
 <h4>조건문(Conditional Statement)<a class="headerlink" href="#conditional-statement" title="Permalink to this headline"></a></h4>
 <p>위의 기본 연산자들 외에 <strong>조건문</strong> 이라는 방법으로 명제들을 결합할 수도 있다.</p>
-<div class="proof proof-type-definition" id="id15">
+<div class="proof proof-type-definition" id="id17">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -416,14 +446,71 @@
 <p>주어진 조건문 <span class="math notranslate nohighlight">\(p \rightarrow q\)</span> 에 기반해,
 명제의 순서를 바꾸거나 부정들을 이용해 새로운 명제들을 만들 수 있다.
 이들을 각각 <strong>역</strong> (converse), <strong>대우</strong> (contrapositive), 그리고 <strong>이</strong> (inverse)라 부른다.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>명제(propostion)</p></th>
+<th class="head"><p>역(converse)</p></th>
+<th class="head"><p>대우(contrapositive)</p></th>
+<th class="head"><p>이(inverse)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(p \rightarrow q\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(q \rightarrow p\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\neg q \rightarrow \neg p\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\neg p \rightarrow \neg q\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>이 중 대우는 본래 명제와 같은 진리값을 가진다. 대우가 참이면 본 명제도 참이고,
 대우가 거짓이면 본 명제도 거짓이다. 역이나 이는 이런 성질을 가지지 않는다.
 일반적으로 역이나 이의 진리값이 정해진다고 해도, 이를 통해 본래 명제의 진리값을 판정할 수는 없다.</p>
 <p>다음의 진리 표를 참조하자.</p>
-<figure class="align-center" id="id16">
-<a class="reference internal image-reference" href="images/conditionaldiagram.png"><img alt="images/conditionaldiagram.png" src="images/conditionaldiagram.png" style="width: 680.0px; height: 378.0px;" /></a>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(p \rightarrow q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\neg q \rightarrow \neg p\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(q \rightarrow p\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\neg p \rightarrow \neg q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="_images/conditionaldiagram.png"><img alt="_images/conditionaldiagram.png" src="_images/conditionaldiagram.png" style="width: 680.0px; height: 378.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">명제, 역, 대우의 구조 다이어그램</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-text">명제, 역, 대우의 구조 다이어그램</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>다이어그램에서 보이다 시피, 대우는 조건문에 역과 이를 가한 것과 같다. 이때 순서는 상관없다.</p>
@@ -433,7 +520,7 @@
 이 두 명제가 <strong>논리적 동치</strong> (Logical equivalence)에 있다 한다.
 조건문과 그 대우, 조건문의 역과 조건문의 이는 각각 논리적 동치 관계에 있다.</p>
 <p>어느 두 명제가 진리값을 공유함을 나타내는 복합 명제는 <strong>쌍조건문</strong> (biconditional statement)이라 한다.</p>
-<div class="proof proof-type-definition" id="id17">
+<div class="proof proof-type-definition" id="id19">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -546,7 +633,7 @@
 <p>복합 명제 중 항진, 모순도 아닌 명제를 <strong>contingency</strong> 하다라 한다.</p>
 <section id="logical-equivalence">
 <h4>논리적 동치 (Logical equivalence)<a class="headerlink" href="#logical-equivalence" title="Permalink to this headline"></a></h4>
-<div class="proof proof-type-definition" id="id18">
+<div class="proof proof-type-definition" id="id20">
 
     <div class="proof-title">
         <span class="proof-type">Definition </span>
@@ -703,8 +790,7 @@ ZFC 공리계에서 이러한 상황을 살펴볼 수 있다.</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(p \leftrightarrow q\)</span></p></li>
-</ol>
-<ol class="arabic simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(q \leftrightarrow r\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(p \rightarrow q\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(p \rightarrow q\)</span></p></li>
 </ol>
@@ -742,7 +828,7 @@ ZFC 공리계에서 이러한 상황을 살펴볼 수 있다.</p>
 귀납법의 가장 큰 약점은 반례의 존재성을 제거할 수 없다는 점이다.
 어떤 이론이 단순히 <span class="math notranslate nohighlight">\(1\)</span> 에서 <span class="math notranslate nohighlight">\(1000\)</span> 까지 아니면 계산할 수 있는 큰 수까지에서 참이라 하더라도
 이는 특정 범주내에서 참임을 보일 뿐이지, 전체 수에 관해서는 무엇도 보장할 수 없다.
-실제로 아주 큰 수에서 대소 관계의 역전이 일어나는 함수들도 존재한다 <a href="#id21"><span class="problematic" id="id8">[#SkeweNumber]_</span></a> .
+실제로 아주 큰 수에서 대소 관계의 역전이 일어나는 함수들도 존재한다 <a class="footnote-reference brackets" href="#skewenumber" id="id8">2</a> .
 수학적 귀납법은 몇가지 공리를 이용해 자연수 범주내에서의 명제 진리값의 일관성을 유지시킬 수 있다.</p>
 </section>
 </section>
@@ -768,6 +854,15 @@ Edward N. Zalta (ed.), URL = &lt;<a class="reference external" href="https://pla
 Edward N. Zalta (ed.), URL = &lt;<a class="reference external" href="https://plato.stanford.edu/archives/sum2021/entries/scientific-method/">https://plato.stanford.edu/archives/sum2021/entries/scientific-method/</a>&gt;.</p></li>
 <li><p>Judson, T.W, Abstract Algebra: Theory and Applications, ISBN:9781944325107, 2019, Orthogonal Publishing L3C.</p></li>
 </ul>
+<p class="rubric">각주</p>
+<dl class="footnote brackets">
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>열은 최소 <span class="math notranslate nohighlight">\(n+1\)</span> 에서 더 많아질 수도 있다. 복잡한 복합 명제는 하위 복합 명제를 중간열에 추가하기도 하기 때문이다.</p>
+</dd>
+<dt class="label" id="skewenumber"><span class="brackets"><a class="fn-backref" href="#id8">2</a></span></dt>
+<dd><p>Skewes, Stanley. “On the Difference π (x)- lix (II).” Proceedings of the London Mathematical Society 3.1 (1955): 48-70.</p>
+</dd>
+</dl>
 </section>
 </section>
 

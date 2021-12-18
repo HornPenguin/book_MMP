@@ -41,17 +41,25 @@
 예를 들어서 두 개의 명제 :math:`p, q` 와 이 둘로 이루어진 복합 명제 :math:`r` 이 있다면, 다음과 같이 쓸 수 있다.
 
 
-.. table:: 진리표 예시
+.. list-table:: 진리표 예시
    :widths: auto
 
-   ==========  ==========  ===========
-    :math:`p` :math:`q`   :math:`r`
-   ==========  ==========  ===========
-   T           T           -
-   T           F           -
-   F           T           -
-   F           F           -
-   ==========  ==========  ===========
+   * - :math:`p`
+     - :math:`q`
+     - :math:`r`
+   * - T
+     - T
+     - ..
+   * - T
+     - F
+     - ..
+   * - F
+     - T
+     - ..
+   * - F
+     - F
+     - ..     
+
 
 :math:`r` 이 있는 열의 각 행에는 :math:`p,q` 의 진리값에 따른 :math:`r` 의 진리값이 들어간다. 
 어느 한 복합 명제 :math:`r` 이 :math:`p_1, p_2, p_3, \dots p_n` 의 독립 명제들로 이루어져 있다면, 
@@ -69,15 +77,13 @@
 
     명제 :math:`p` 에 대해, " :math:`p` 의 부정"은 :math:`\neg p` 로 표기하며, " :math:`p` 가 아닌 경우"를 의미한다.
 
-    .. table::
-        :widths: auto
-
-        ==========  ==============
-        :math:`p`   :math:`\neg p`
-        ==========  ==============
-        T           F
-        F           T
-        ==========  ==============
+    +----------------+----------------+
+    |  :math:`p`     | :math:`\neg p` |
+    +----------------+----------------+
+    |  T             | F              |
+    +----------------+----------------+
+    |  F             | T              |
+    +----------------+----------------+
 
 
 
@@ -93,18 +99,17 @@
     명제 :math:`p,q` 에 대해, " :math:`p,q` 의 연언"은 :math:`p \wedge q` 로 표기하며, 
     " :math:`p` 가 참이며, :math:`q` 도 참이다."를 의미한다. 
 
-    .. table::
-        :widths: auto
-
-        ==========  ==========  ===================
-        :math:`p`   :math:`q`   :math:`p \wedge q`
-        ==========  ==========  ===================
-        T           T           F
-        T           F           T
-        F           F           T
-        F           F           T        
-        ==========  ==========  ===================
-
+    +----------------+----------------+--------------------+
+    |  :math:`p`     | :math:`q`      | :math:`p \wedge q` |
+    +----------------+----------------+--------------------+
+    |  T             | T              | T                  |
+    +----------------+----------------+--------------------+
+    |  T             | F              | F                  |
+    +----------------+----------------+--------------------+
+    |  F             | T              | F                  |
+    +----------------+----------------+--------------------+
+    |  F             | F              | F                  |
+    +----------------+----------------+--------------------+
 
 
 단순히, :math:`p \text{ and } q` 나 :math:`p \& q` 로 표기하기도 한다. 일반적으로 :math:`AND`  연산자라 부른다.
@@ -235,7 +240,7 @@
     =======================  =======================  ==================================  ==================================
     명제(propostion)          역(converse)             대우(contrapositive)                 이(inverse)   
     =======================  =======================  ==================================  ==================================
-    :math:`p \rightarrow q`  :math:`q \rightarrow p`  :math:`\neg q \rightarrow \neg p`  :math:`\neg p \rightarrow \neg q`
+    :math:`p \rightarrow q`  :math:`q \rightarrow p`  :math:`\neg q \rightarrow \neg p`    :math:`\neg p \rightarrow \neg q`
     =======================  =======================  ==================================  ==================================
 
 
@@ -249,7 +254,7 @@
     :widths: auto
     
     =========  =========  =======================  ==================================  =======================  =================================
-    :math:`p`  :math:`q`  :math:`p \rightarrow q`  :math:`\neg q \rightarrow \neg p`  :math:`q \rightarrow p`  :math:`\neg p \rightarrow \neg q` 
+    :math:`p`  :math:`q`  :math:`p \rightarrow q`  :math:`\neg q \rightarrow \neg p`   :math:`q \rightarrow p`  :math:`\neg p \rightarrow \neg q` 
     =========  =========  =======================  ==================================  =======================  =================================
     T          T          T                        T                                   T                        T
     T          F          F                        F                                   T                        T
@@ -539,7 +544,6 @@ ZFC 공리계에서 이러한 상황을 살펴볼 수 있다.
 
     1. :math:`p \leftrightarrow q`
     2. :math:`q \leftrightarrow r` 
-    --------------------------------
     3. :math:`p \rightarrow q`
     4. :math:`p \rightarrow q`
 
@@ -614,7 +618,7 @@ ZFC 공리계에서 이러한 상황을 살펴볼 수 있다.
 * Judson, T.W, Abstract Algebra: Theory and Applications, ISBN:9781944325107, 2019, Orthogonal Publishing L3C.
 
 
-.. rubric::
+.. rubric:: 각주
 
-    .. [#진리표] 열은 최소 :math:`n+1` 에서 더 많아질 수도 있다. 복잡한 복합 명제는 하위 복합 명제를 중간열에 추가하기도 하기 때문이다.   
-    .. [#SkeweNumber] Skewes, Stanley. "On the Difference π (x)- lix (II)." Proceedings of the London Mathematical Society 3.1 (1955): 48-70.
+.. [#진리표] 열은 최소 :math:`n+1` 에서 더 많아질 수도 있다. 복잡한 복합 명제는 하위 복합 명제를 중간열에 추가하기도 하기 때문이다.   
+.. [#SkeweNumber] Skewes, Stanley. "On the Difference π (x)- lix (II)." Proceedings of the London Mathematical Society 3.1 (1955): 48-70.
