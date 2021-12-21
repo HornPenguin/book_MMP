@@ -654,221 +654,208 @@ $$M\_{m \times n}(\mathbb{F})$$
         j=1. 2. \dots n 
 
 
----
+.. proof:definition:: 행렬의 전치 Transpose
 
-|Def|행렬의 전치(Transpose)|
-|--|--|
+    행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})` 에 대해, 
+    행렬 :math:`{\bf B} \in M\_{n \times m} (\mathbb{F})` 가 다음을 만족한다.
 
+    .. math::
 
-행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})`에 대해, 행렬 :math:`{\bf B} \in M\_{n \times m} (\mathbb{F})`가 다음을 만족한다.
-
-$$\bf B\_{ij} = A\_{ji}$$
-
-이때, 행렬 :math:`\bf B`를 행렬 :math:`\bf A`의 **전치**(Transpose)라 부르고, :math:`\bf A^t`로 표기한다.
+        \bf B\_{ij} = A\_{ji}
 
 
----
+    이때, 행렬 :math:`\bf B` 를 행렬 :math:`\bf A` 의 **전치** (Transpose)라 부르고, :math:`\bf A^t` 로 표기한다.
 
-$${\bf{A}} = 
-\begin{pmatrix} 
-a\_{11} & a\_{12} & a\_{13} & a\_{14} \\\\
-a\_{21} & a\_{22} & a\_{23} & a\_{24} \\\\
-\end{pmatrix}$$
 
-$$\rightarrow
-{\bf{A}^t} = 
-\begin{pmatrix} 
-a\_{11} & a\_{21}  \\\\
-a\_{12} & a\_{22}  \\\\
-a\_{13} & a\_{23}  \\\\
-a\_{14} & a\_{24}  \\\\
-\end{pmatrix} $$
+
+.. math::
+    {\bf{A}} = 
+    \begin{pmatrix} 
+    a\_{11} & a\_{12} & a\_{13} & a\_{14} \\\\
+    a\_{21} & a\_{22} & a\_{23} & a\_{24} \\\\
+    \end{pmatrix}\\
+
+    \rightarrow
+    {\bf{A}^t} = 
+    \begin{pmatrix} 
+    a\_{11} & a\_{21}  \\\\
+    a\_{12} & a\_{22}  \\\\
+    a\_{13} & a\_{23}  \\\\
+    a\_{14} & a\_{24}  \\\\
+    \end{pmatrix} 
 
 
 행렬끼리의 곱은 다른 연산에 비해 특이하게 정의된다.
 
-|Def|행렬곱( Matrix mulitplication)|
-|--|--|
 
+.. proof:definition:: 행렬곱
 
-행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})`, :math:`{\bf B} \in M\_{n \times p} (\mathbb{F})`,에 대해, 이 두 행렬의 행렬곱 :math:`{\bf C}`은 다음과 같다.
+    행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})` , :math:`{\bf B} \in M\_{n \times p} (\mathbb{F})` 에 대해, 
+    이 두 행렬의 행렬곱 :math:`{\bf C}` 은 다음과 같다.
 
-$${\bf C} := {\bf A} {\bf B} $$
-$$c\_{ij} = \sum_{k=1}^n a\_{ik}b\_{kj}$$
-$$i = 1 ,2, \dots m$$
-$$j = 1 ,2, \dots p$$
-$$k = 1 ,2, \dots n$$
+    .. math::
 
+          {\bf C} := {\bf A} {\bf B} 
+          c\_{ij} = \sum_{k=1}^n a\_{ik}b\_{kj}
+          i = 1 ,2, \dots m
+          j = 1 ,2, \dots p
+          k = 1 ,2, \dots n
 
+정의에 의해 :math:`{\bf C} \in M\_{np}(\mathbb{F})` 임을 알 수 있다. 
+이 곱은 우리가 아는 일반적인 곱셈과 다른 점이 많다. 
+먼저, 정의에 의해 교환 법칙이 성립하지 않는다. 일반적으로 :math:`\mathbf{AB - BA} \neq 0` 이고, 
+특수한 경우 :math:`\mathbf{AB - BA} = 0` 를 만족하는 Commuting matrix라 부른다. 
 
+벡터와 행렬의 곱은 벡터 :math:`{\bf x } \in M\_{m \times n}` 를 :math:`m` 이나 :math:`n` 이 1인 행렬임을 알면 행렬곱이라는 것을 알 수 있다. 
+이 때. :math:`\bf A x` 에서 :math:`\bf A` 의 행의 갯수가 :math:`\bf x` 의 길이와 같아야한다.
 
----
+이러한 정의는 행렬을 통해 **선형 변환** (Linear transformation)을 나타내기 위함으로 이러한 행렬 곱을 통해 여러 실제 선형 변환을 실수 연산으로 계산할 수 있다. 
+실제 선형 변환과의 관련성은 이후의 단원에서 선형 변환을 배우고 알아보도록 하고, 여기서는 이러한 행렬 곱의 성질에 대해 알아보자
 
-정의에 의해 :math:`{\bf C} \in M\_{np}(\mathbb{F})`임을 알 수 있다. 이 곱은 우리가 아는 일반적인 곱셈과 다른 점이 많다. 먼저, 정의에 의해 교환 법칙이 성립하지 않는다. 일반적으로 :math:`\mathbf{AB - BA} \neq 0`이고, 특수한 경우 :math:`\mathbf{AB - BA} = 0`를 만족하는 Commuting matrix라 부른다. 
+* 두 행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F}), {\bf B} \in M_{k \times l} (\mathbb{F})` 에 대해, 
+  행렬곱 :math:`{\bf A} {\bf B} ` 가 정의된다는 뜻은 :math:`n = k` 를 의미한다.
+* 두 행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F}), {\bf B} \in M_{k \times l} (\mathbb{F})` 에 대해, 
+  행렬곱 :math:`{\bf C} = {\bf A} {\bf B}` 는 :math:`M_{m  \times l}` 에 속한다.
+* 벡터 :math:`\bf x` 와 행렬 :math:`{\bf A} \in M_{m \times n}` 사이의 곱은 열 벡터:math:`\bf x` 에 대해, 
+  이를 :math:`M_{n \times 1} (\mathbb{F})` 크기의 행렬로 보았을 때, 행렬의 곱 :math:`\bf A x` 과 같다. 행 벡터:math:`\bf y` 의 경우 전치 연산을 통해 가능하다. 
+  :math:`\bf A y^T` 
+* 행렬곱은 일반적으로 교환 불가능하다. :math:`\bf AB - BA  \neq 0`, 만일 두 행렬 :math:`\bf A, B` 가 :math:`\bf AB - BA  = 0` 를 만족한다면, 
+  :math:`\bf A, B` 가 교환가능하다라 한다. 영어로는 commuting matrix라고 한다.
+* :math:`\bf (AB)C = A(BC)`
+* :math:`\bf A(B+C) = AB+ AC` , :math:`\bf (B+C)D = BD + CD`
+* :math:`c {\bf (AB)} = (c {\bf A}) {\bf B}`, :math:`{\bf (AB)}c = {\bf A} ({\bf B}c)`
+* :math:`\bf (AB)^T =B^T A^T`
 
-벡터와 행렬의 곱은 벡터 :math:`{\bf x } \in M\_{m \times n}`를 :math:`m`이나 :math:`n`이 1인 행렬임을 알면 행렬곱이라는 것을 알 수 있다. 이 때. :math:`\bf A x`에서 :math:`\bf A`의 행의 갯수가 :math:`\bf x`의 길이와 같아야한다.
+일반적으로 행렬은 실수 체 :math:`\mathbb{R}` 위에서 정의된 경우를 다루는데, 
+복소수 체 :math:`\mathbb{C}`에서 정의될 경우, 켤레 복소수 꼴을 정의할 수 있다.
+어느 임의의 행렬 :math:`\bf A \in M_{m \times n}(\mathbb {C})` 에 대해, 
+.. math::
+    
+    \bf {A}^{\dagger}\_{ij} = \overline{A}\_{ij}
 
-이러한 정의는 행렬을 통해 **선형 변환**(Linear transformation)을 나타내기 위함으로 이러한 행렬 곱을 통해 여러 실제 선형 변환을 실수 연산으로 계산할 수 있다. 실제 선형 변환과의 관련성은 이후의 단원에서 선형 변환을 배우고 알아보도록 하고, 여기서는 이러한 행렬 곱의 성질에 대해 알아보자
-
-- 두 행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F}), {\bf B} \in M_{k \times l} (\mathbb{F}) `에 대해, 행렬곱 :math:`{\bf A} {\bf B} `가 정의된다는 뜻은 :math:`n = k`를 의미한다.
-- 두 행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F}), {\bf B} \in M_{k \times l} (\mathbb{F}) `에 대해, 행렬곱 :math:`{\bf C} = {\bf A} {\bf B} `는 :math:`M_{m  \times l}`에 속한다.
-- 벡터 :math:`\bf x`와 행렬 :math:`{\bf A} \in M_{m \times n} ` 사이의 곱은 열 벡터:math:`\bf x`에 대해, 이를 :math:`M_{n \times 1} (\mathbb{F})` 크기의 행렬로 보았을 때, 행렬의 곱 :math:`\bf A x`과 같다. 행 벡터:math:`\bf y`의 경우 전치 연산을 통해 가능하다. :math:`\bf A y^T` 
-- 행렬곱은 일반적으로 교환 불가능하다. :math:`\bf AB - BA  \neq 0`, 만일 두 행렬 :math:`\bf A, B`가 :math:`\bf AB - BA  = 0`를 만족한다면, :math:`\bf A, B`가 교환가능하다라 한다. 영어로는 commuting matrix라고 한다.
-- $\bf (AB)C = A(BC)$
-- :math:`\bf A(B+C) = AB+ AC` , $\bf (B+C)D = BD + CD$
-- :math:`c {\bf (AB)} = (c {\bf A}) {\bf B}`, ${\bf (AB)}c = {\bf A} ({\bf B}c)$
-- $\bf (AB)^T =B^T A^T$
-
-일반적으로 행렬은 실수 체 :math:`\mathbb{R}` 위에서 정의된 경우를 다루는데, 복소수 체 :math:`\mathbb{C}`에서 정의될 경우, 켤레 복소수 꼴을 정의할 수 있다.
-어느 임의의 행렬 :math:`\bf A \in M_{m \times n}(\mathbb {C})`에 대해, 
-$$\bf {A}^{\dagger}\_{ij} = \overline{A}\_{ij}$$
 를 의미한다. ( :math:`A^{\*}` 표기도 쓴다.) 
 
-# 정사각 행렬
+정사각 행렬
+====================
 
-행렬 :math:`M_{m\times n}(\mathbb{F})`에 대해, :math:`m=n`인 경우, 이를 정사각 행렬이라고 부른다.
+행렬 :math:`M_{m\times n}(\mathbb{F})` 에 대해, :math:`m=n` 인 경우, 이를 정사각 행렬이라고 부른다.
+
+.. proof:definition::정사각 행렬 Square matrix
+
+    행렬 :math:`A \in M_{m \times n}(\mathbb{F})` 에서 
+    :math:`m = n` 이라면, 이때의 행렬 :math:`A` 를 정사각 행렬이라 부른다. 
+    정사각 행렬 공간은 다음과 같이 표기한다. 
+
+    .. math::
+
+        M_n (\mathbb{F})
 
 
-<table style="border-radius:8px;width:100%;">
-<th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
-Def</th>
-<th style="text-align:left;">
-정사각 행렬(Square matrix)</th>
-<tr style="text-align:center;">
-<td colspan="2">
-
-행렬 :math:`A \in M_{m \times n}(\mathbb{F})` 에서 :math:`m = n` 이라면, 이때의 행렬 :math:`A` 를 정사각 행렬이라 부른다. 정사각 행렬 공간은 다음과 같이 표기한다. $M_n (\mathbb{F})$
-            
-</td>
-</tr>
-</table>
-
----
 
 정사각 행렬에서,  행렬의 대각 성분 중 가장 큰 성분을 주 대각 성분이라 한다.
 
-<table style="border-radius:8px;width:100%;">
-<th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
-Def</th>
-<th style="text-align:left;">
-주 대각(Diagonal)</th>
-<tr style="text-align:center;">
-<td colspan="2">
-정사각 행렬 :math:`{\bf{A}} \in M_{n}(\mathbb{F})`에서 
-$$A_{ii} \in \\{A_{11}, A_{22} ,  \dots, A_{nn} \\}$$
-$$i = 1, 2, \dots n$$
-를 :math:`{\bf{A}}`의 주 대각 성분이라고 하며, :math:`\text{diag}({\bf{A}})`로 표기한다.
+
+.. proof:definition:: 주 대각 Diagonal
             
-</td>
-</tr>
-</table>
+    정사각 행렬 :math:`{\bf{A}} \in M_{n}(\mathbb{F})` 에서 
 
-<table style="border-radius:8px;width:100%;">
-<th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
-Def</th>
-<th style="text-align:left;">
-대각합(Trace)</th>
-<tr style="text-align:center;">
-<td colspan="2">
+    .. math::
 
-정사각 행렬 :math:`{\bf{A}} \in M_{n}(\mathbb{F})`에서 
-$$\sum_{i=1}^n A_{ii} \in \text{diag}({\bf{A}})$$
-$$i = 1, 2, \dots n$$
-를 :math:`{\bf{A}}`의 <b>대각합(Trace)</b>라고 하며, :math:`\text{tr}({\bf{A}})`로 표기한다.
-            
-</td>
-</tr>
-</table>
+        A_{ii} \in \\{A_{11}, A_{22} ,  \dots, A_{nn} \\}
+        i = 1, 2, \dots n
+    를 :math:`{\bf{A}}` 의 주 대각 성분이라고 하며, :math:`\text{diag}({\bf{A}})` 로 표기한다.
 
----
+.. proof:definition:: 대각합 Trace
+
+    정사각 행렬 :math:`{\bf{A}} \in M_{n}(\mathbb{F})` 에서 
+
+    .. math::
+
+        \sum_{i=1}^n A_{ii} \in \text{diag}({\bf{A}})
+        i = 1, 2, \dots n
+    를 :math:`{\bf{A}}` 의 **대각합** (Trace)라고 하며, :math:`\text{tr}({\bf{A}})` 로 표기한다.
+
 
 이 때, 대각합은 다음의 성질을 가진다.
 
-- $\text{tr}(AB) =\text{tr}(BA)$
-- $\text{tr}(A+B) =\text{tr}(A) + \text{tr}(B)$
-- $\text{tr}(cA) = c \cdot \text{tr}(A)$
+- :math:`\text{tr}(AB) =\text{tr}(BA)`
+- :math:`\text{tr}(A+B) =\text{tr}(A) + \text{tr}(B)`
+- :math:`\text{tr}(cA) = c \cdot \text{tr}(A)`
 
 이를 이용하면 한가지 재미있는 사실을 보일 수 있다. 우리가 행렬 곱이 교환 불가능함을 보일 때, 다음과 같은 식을 사용했다.
 $$AB - BA$$
-일반적으로 해당 식은 영행렬이 아니다. 이때, :math:`C = AB - BA`인 행렬 :math:`C`에 대해, :math:`\text{tr}(C)`는 항상 :math:`0`이 된다. 
-반대로, :math:`\text{tr}(C) = 0`인 행렬은 항상 :math:`AB-BA` 꼴로 분해할 수 있다. (증명은 나중에 하도록하자)
+일반적으로 해당 식은 영행렬이 아니다. 이때, :math:`C = AB - BA` 인 행렬 :math:`C` 에 대해, :math:`\text{tr}(C)`는 항상 :math:`0` 이 된다. 
+반대로, :math:`\text{tr}(C) = 0` 인 행렬은 항상 :math:`AB-BA` 꼴로 분해할 수 있다. (증명은 나중에 하도록하자)
 
-정사각 행렬의 경우 연산의 항등원이 존재하는 데, 이를 항등 행렬(identity matrix)라고 하며, :math:`\bf I` 로 표기한다. :math:`n` 차원의 정사각 행렬 공간의 항등 행렬은 :math:`{\bf I}\_n \in M\_{n}`로도 표기한다.
+정사각 행렬의 경우 연산의 항등원이 존재하는 데, 이를 항등 행렬(identity matrix)라고 하며, 
+:math:`\bf I` 로 표기한다. :math:`n` 차원의 정사각 행렬 공간의 항등 행렬은 :math:`{\bf I}\_n \in M\_{n}` 로도 표기한다.
 
-$${\bf I}\_n =
-\begin{pmatrix}
-1&0 & 0&&0 \\\\
-0& 1& 0& \ldots &0 \\\\
-0& 0& 1& &0 \\\\
-&\vdots  & & \ddots &\vdots \\\\
- 0&0&0& \ldots &1
-\end{pmatrix}$$  
-
-
-<table style="border-radius:8px;width:100%;">
-<th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
-Def</th>
-<th style="text-align:left;">
-항등 행렬(Identity Matrix)</th>
-<tr style="text-align:center;">
-<td colspan="2">
-
-정사각 행렬 :math:`{\bf I} \in M_{n} (\mathbb{F})`에 대해, 다음과 같은 행렬 :math:`{\bf I}`를 <b>항등 행렬(Identity Matrix)</b>이라 하고, :math:`{\bf I}_n` 이라 표기한다.
-
-$${\bf I}_{ij} = \delta_{ij}$$
-            
-</td>
-</tr>
-</table>
-
-
-항등 행렬은 단위 행렬(Unit matrix)라고도 한다. 이 항등 행렬은 행렬곱에 대해 교환 가능하다. 즉,어떤 임의의 행렬 :math:`{\bf A} \in M\_n (\mathbb{F})`에 대해 다음이 성립한다.
-
-$${\bf A I\_n - I\_n A }=0$$
-
-스칼라 행렬은 항등 행렬에 스칼라를 곱한 형태 :math:`c {\bf I}\_n`의 행렬로 행렬 합과 곱에서 스칼라처럼 사용 가능하다.
-
-정사각 행렬끼리의 곱은 곱하기 전과 동일한 차원으로 닫혀있기 때문에, 동일한 행렬의 연속적인 곱을 수행 할 수 있다. 이때, 우리가 체에서 차수에대해 한 것처럼 이러한 곱에 대해 비슷한 행렬을 정의할 수 있다. 이를 멱영 행렬(nilpotent matrix)이라 한다.
-
-
-<table style="border-radius:8px;width:100%;">
-<th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
-Def</th>
-<th style="text-align:left;">
-멱영 행렬(Nilpotent Matrix)</th>
-<tr style="text-align:center;">
-<td colspan="2">
-
-정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})`에 대해,
-
-$$\exists r\geq 1  \text{ s.t } {\bf A}^r =0$$
-인 행렬 :math:`{\bf A}`을 <b>멱영 행렬(Nilpotent Matrix)</b>이라 한다.
+.. math::
     
-</td>
-</tr>
-</table>
-
-
-
-
-앞서 행렬을 정의할 때, 행렬의 전치를 보았다. 어느 :math:`M_{m \times n}` 행렬의 전치는 :math:`M_{n \times m}` 행렬로 표현된다. :math:`m = n`인 정사각행렬에서 이러한 전치 연산은 같은 공간안으로 되돌아오게 된다. 따라서 행렬의 전치와 행렬을 비교할 수 있는데, 만약 같은 경우 이를 우린   **대칭 행렬(symmetric matrix)**라 부른다.
+    {\bf I}\_n =
+    \begin{pmatrix}
+    1&0 & 0&&0 \\\\
+    0& 1& 0& \ldots &0 \\\\
+    0& 0& 1& &0 \\\\
+    &\vdots  & & \ddots &\vdots \\\\
+     0&0&0& \ldots &1
+    \end{pmatrix}
 
 
 <table style="border-radius:8px;width:100%;">
 <th style="text-align:center;background-color:rgb(0, 0, 0); color:white; border-top-left-radius: 10px;width:20%;">
 Def</th>
 <th style="text-align:left;">
-대칭 행렬(Symmetirc Matrix)</th>
-<tr style="text-align:center;">
-<td colspan="2">
+항등 행렬Identity Matrix
 
-정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})`와 :math:`i,j = 1, 2, \dots n`에 대해,
+정사각 행렬 :math:`{\bf I} \in M_{n} (\mathbb{F})` 에 대해, 
+다음과 같은 행렬 :math:`{\bf I}` 를 <b>항등 행렬(Identity Matrix)</b>이라 하고, :math:`{\bf I}_n` 이라 표기한다.
 
-$$A_{ij} = A_{ji}$$
-인 행렬 :math:`{\bf A}`을 **대칭 행렬(Symmetric Matrix)**이라 한다.
-</td>
-</tr>
-</table>
+.. math::
+    
+    {\bf I}_{ij} = \delta_{ij}
+
+
+항등 행렬은 단위 행렬(Unit matrix)라고도 한다. 이 항등 행렬은 행렬곱에 대해 교환 가능하다. 
+즉,어떤 임의의 행렬 :math:`{\bf A} \in M\_n (\mathbb{F})` 에 대해 다음이 성립한다.
+
+.. math:: 
+    
+    {\bf A I\_n - I\_n A }=0
+
+스칼라 행렬은 항등 행렬에 스칼라를 곱한 형태 :math:`c {\bf I}\_n` 의 행렬로 행렬 합과 곱에서 스칼라처럼 사용 가능하다.
+
+정사각 행렬끼리의 곱은 곱하기 전과 동일한 차원으로 닫혀있기 때문에, 동일한 행렬의 연속적인 곱을 수행 할 수 있다. 
+이때, 우리가 체에서 차수에대해 한 것처럼 이러한 곱에 대해 비슷한 행렬을 정의할 수 있다. 
+이를 멱영 행렬(nilpotent matrix)이라 한다.
+
+.. proof:definition:: 멱영 행렬 Nilpotent Matrix
+
+    정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})`에 대해,
+
+    .. math::
+        
+        \exists r\geq 1  \text{ s.t } {\bf A}^r =0
+
+    인 행렬 :math:`{\bf A}`을 **멱영 행렬** (Nilpotent Matrix)이라 한다.
+    
+
+
+
+앞서 행렬을 정의할 때, 행렬의 전치를 보았다. 어느 :math:`M_{m \times n}` 행렬의 전치는 :math:`M_{n \times m}` 행렬로 표현된다. 
+:math:`m = n` 인 정사각행렬에서 이러한 전치 연산은 같은 공간안으로 되돌아오게 된다. 
+따라서 행렬의 전치와 행렬을 비교할 수 있는데, 만약 같은 경우 이를 우린  **대칭 행렬(symmetric matrix)** 라 부른다.
+
+.. proof:definition:: 대칭 행렬 Symmetirc Matrix
+
+    정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})`와 :math:`i,j = 1, 2, \dots n`에 대해,
+
+    .. math::
+        
+        A_{ij} = A_{ji}
+    
+    인 행렬 :math:`{\bf A}`을 **대칭 행렬** (Symmetric Matrix)이라 한다.
+
 
 
 .. rubric 각주
