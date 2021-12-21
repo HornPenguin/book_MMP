@@ -42,7 +42,7 @@
 
         \forall x \forall y [ \forall z (z \in x \leftrightarrow z \in y) \rightarrow x =y]  
 
-.. proof:Axioms:: Unrestricted Comprehension
+.. proof:Axiom:: **Schema** Unrestricted Comprehension
 
     집합론의 언어로 된 술어 :math:`P(x, w_1, \dots, w_n)` 에 대해, 
 
@@ -180,11 +180,11 @@ Schröder-Bernstein theorem
  5. 체 (Field)
 
 
-=========  =====  ============  ======
-연산자 수   0       1            2
-=========  =====  ============  ======
-대수 구조   집합   모노이드, 군   환,체 
-=========  =====  ============  ======
+==========  =====  ============  ======
+연산자 수    0      1             2
+==========  =====  ============  ======
+대수 구조    집합   모노이드, 군   환,체 
+==========  =====  ============  ======
 
 
 이러한 구조 하나하나에 대해서 수학 분야 1개가 필요할 정도로(eg. 군론) 이들이 가지는 수학적 유용성과 가치는 매우 높다. 
@@ -284,6 +284,7 @@ Schröder-Bernstein theorem
         \forall a \in \mathbb{Z} \\
 
         \exists -a \in \mathbb{Z} \text{  and  } a+(-a) = (-a) +a=0  
+
 4. 결합 법칙 (Associative law)
 .. math:: 
     
@@ -382,6 +383,7 @@ Schröder-Bernstein theorem
 .. proof:Theorem::
 
     모든 체 :math:`F` 와 :math:`\forall a,b \in F` 에 대해 다음이 성립한다. 
+    
    .. math::
        
        a \cdot 0 = 0 \cdot a = 0\\
