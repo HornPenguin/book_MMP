@@ -36,13 +36,13 @@
 소박한 집합론은 2개의 공리를 포함한다. 이 둘은 각각 외연 공리와 Unrestriced Comprehension 공리라 불린다. 
 이 둘을 다시 쓰면 다음과 같다.
 
-.. proof:Axiom:: 외연 Extensionality
+.. proof:axiom:: 외연 Extensionality
 
     .. math::
 
         \forall x \forall y [ \forall z (z \in x \leftrightarrow z \in y) \rightarrow x =y]  
 
-.. proof:Axiom:: **Schema** Unrestricted Comprehension
+.. proof:axiomschema:: Unrestricted Comprehension
 
     집합론의 언어로 된 술어 :math:`P(x, w_1, \dots, w_n)` 에 대해, 
 
@@ -69,7 +69,7 @@ ZFC 공리계 (ZFC Axioms)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ZFC 공리는 체르멜로( **Z** ermelo)와 프렝켈( **F** raenkel)이 만든 공리계와 선택 공리(Axiom of **C** hoice)를 추가한 공리계를 의미한다.
 
-.. proof:Axiom:: 확장 Extensionality
+.. proof:axiom:: 확장 Extensionality
 
     .. math::
 
@@ -181,9 +181,9 @@ Schröder-Bernstein theorem
 
 
 ==========  =====  ============  ======
-연산자 수    0      1             2
+연산자 수    0       1             2
 ==========  =====  ============  ======
-대수 구조    집합   모노이드, 군   환,체 
+대수 구조    집합    모노이드, 군   환,체 
 ==========  =====  ============  ======
 
 
@@ -363,7 +363,7 @@ Schröder-Bernstein theorem
 
 다음은 체의 대표적인 성질이다.  
 
-.. proof:Theorem::
+.. proof:theorem::
 
     .. math::
 
@@ -371,7 +371,7 @@ Schröder-Bernstein theorem
         a+b = c+b \rightarrow a=c \\
         if \ b\neq 0 \ \  a \cdot b = b \cdot c \rightarrow a=c
 
-.. proof:Corollary::
+.. proof:corollary::
 
 	체에서 각 연산의 항등원(0,1)은 유일하다. 
 
@@ -380,16 +380,16 @@ Schröder-Bernstein theorem
 우리가 실수 체 :math:`\mathbb{R}` 에서 익숙하게 쓰는  0,1의 성질들이 체 자체의 정의로부터 비롯된다.    
 
 
-.. proof:Theorem::
+.. proof:theorem::
 
     모든 체 :math:`F` 와 :math:`\forall a,b \in F` 에 대해 다음이 성립한다. 
-    
+
    .. math::
        
        a \cdot 0 = 0 \cdot a = 0\\
        -( a \cdot b) = (- a) \cdot b = a \cdot (-b)
 
-.. proof:Corollary::
+.. proof:corollary::
 
 	    0은 곱셈 역원이 없다.
 
@@ -414,7 +414,7 @@ Schröder-Bernstein theorem
 
 예를 들어 :math:`char(\mathbb{Q}) = char(\mathbb{R}) =char(\mathbb{C}) = 0` 이다.
 
-.. proof:Theorem:: Prime property of charateristic
+.. proof:theorem:: Prime property of charateristic
 
     :math:`char(F)=n`  에서 :math:`n` 은 0 아니면 소수이다. 
 

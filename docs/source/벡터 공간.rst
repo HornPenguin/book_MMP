@@ -68,11 +68,11 @@
 그 공간들이 벡터 공간의 공리를 만족시킨다면, 벡터 공간에서 나온 여러 정리들을 적용시킬 수 있음을 의미한다.  
 
 
-.. proof:Theorem:: Cancellation Law
+.. proof:theorem:: Cancellation Law
 
     :math:`\textbf{x,y,z} \in V`에 대해, :math:`\textbf{x+z=y+z}`라면, :math:`\textbf{x=y}` 이다.
 
-.. proof:Corollary:: Cancellation Law
+.. proof:corollary:: Cancellation Law
 
     :math:`\textbf{0}` 는 유일하다.
     
@@ -125,7 +125,7 @@
     이때, :math:`(W, +_W, \cdot _W )` 을  **벡터 공간 ** :math:`(V,+,\cdot)` **의 부분 공간** 이라 부른다.
 
 
-.. proof:Theorem:: 
+.. proof:theorem:: 
 
     벡터 공간 :math:`(V, +, \cdot)` 에 대해 다음이 성립한다.
 
@@ -134,7 +134,7 @@
     :math:`W \neq ∅` 이다.  
 
 
-.. proof:Theorem:: 
+.. proof:theorem:: 
 
     벡터 공간 :math:`(V, +, \cdot)` 의 부분 공간 :math:`W_1, W_2` 에 대해 다음이 성립한다.
 
@@ -260,7 +260,7 @@
 이 정의는 실제 어느 집합이 선형 독립인지 판단할 때, 유용하게 쓰인다. 
 하나의 벡터(영 벡터)의 선형 결합이 유일한지 결정하는 것만으로 독립성을 판별할 수 있기 때문이다.
 
-.. proof:Theorem::
+.. proof:theorem::
         
 * :math:`\emptyset` 은 선형 독립이다.
 * 선형 종속 집합 :math:`S` 는 :math:`|S| > 0` 을 만족한다.
@@ -301,7 +301,7 @@
 * :math:`\mathcal{P}(\mathbb{F})` 의 표준 기저: :math:`S= \\{ 1, x, x^2, \dots, \\}`
 
 그런데 벡터 공간을 이루는 원소가 동일하다 하더라도 체가 달라지면, 벡터 공간의 구조도 달라지게 된다. 
-예를 들어서 :math:`\mathbb{R}` 과 :math:`\mathbb{C} `를 보면, 이 두 집합은 일반적인 실수 체 위에서 벡터 공간을 형성한다. 
+예를 들어서 :math:`\mathbb{R}` 과 :math:`\mathbb{C}` 를 보면, 이 두 집합은 일반적인 실수 체 위에서 벡터 공간을 형성한다. 
 이때, 체를 유리수, 복소수로 바꾸면 기저의 수가 달라지는 것을 볼 수 있다.
 
 ==============================  ===========================  =================
@@ -319,7 +319,7 @@
 대표적인 무리수로 :math:`\sqrt{2},  \sqrt{3}` 이 있고, 그 안의 무리수의 일종으로 **초월수** (transcendental number)가 있다. 
 대표적인 초월수로 :math:`\pi` 와 :math:`e` 가 있다.
 
-.. proof:Theorem:: 
+.. proof:theorem:: 
         
     벡터 공간 :math:`V` 와 그 유한 부분 집합 
     :math:`S= \\{ {\bf{x}_1}, \dots, {\bf{x}_n}  \\}` 에 대해, 
@@ -328,7 +328,7 @@
 
 
 
-.. proof:Theorem::  대체 정리 Replacement Theor
+.. proof:theorem::  대체 정리 Replacement Theor
         
     체 :math:`\mathbb{F}` 위에서 정의된 벡터 공간 :math:`V` 와 그 부분 집합 :math:`G\subseteq V` 에 대해, 
     :math:`G` 가 :math:`V` 의 생성 집합이고 :math:`|G|=n` 이라 하자. :math:`V` 의 선형 독립 부분 집합 
@@ -338,7 +338,7 @@
 
         |H| = n-m \text{ s.t } \text{ span}(L \cup H) = V
 
-.. proof:Theorem::  대체 정리 Corollary 1
+.. proof:theorem::  대체 정리 Corollary 1
 
 체 :math:`\mathbb{F}` 위에서 정의된 벡터 공간 :math:`V`와 그 기저 :math:`G` 가 
 :math:`|G|=n<\infty` 를 만족하면, :math:`V` 의 다른 기저 :math:`G' \neq G` 가 존재할 때, 
@@ -370,7 +370,7 @@
 차원의 개념이 있다면 대체 공간의 따름 정리 2를 볼 수 있다.
 
 
-.. proof:Theorem::  대체 정리 Corollary 2
+.. proof:theorem::  대체 정리 Corollary 2
 
     체 :math:`\mathbb{F}` 위에서 정의된 벡터 공간 :math:`V` 가 :math:`\text{dim}(V)=n <\infty` 일 때, 그 부분 집합 :math:`S \subseteq V` 에 대해 다음이 성립한다.
 
@@ -380,7 +380,7 @@
     4. 모든 생성 부분 집합 :math:`S` 은 :math:`V` 의 기저로 줄일 수 있다.
 
 
-.. proof:Theorem:: 
+.. proof:theorem:: 
      
     벡터 공간 :math:`V` 와 그 부분 집합 :math:`S` 에 대해, :math:`S` 가 유한 부분 집합이고, 
     :math:`\text{span}(S) =V` 이면, 벡터 공간 :math:`V` 의 유한 기저 :math:`S'` 가 존재해, :math:`\text{dim}(V) < \infty` 가 성립한다.

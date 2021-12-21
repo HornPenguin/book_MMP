@@ -116,13 +116,13 @@
 
 위를 만족하는 선형 변환은 다음을 만족한다.
 
-.. proof:Theorem:: Properties of Linear transform
+.. proof:theorem:: Properties of Linear transform
 
     * :math:`T({0_V}) = 0_W` 
     * :math:`T(c {\bf x} + {\bf y}) = cT( {\bf x}) +T({\bf y})` 
     * :math:`T(- {\bf y}) =-T({\bf y})``
 
-.. proof:Corollary:: 1
+.. proof:corollary:: 1
 
     .. math::
 
@@ -222,7 +222,7 @@ bijective & :math:`V =W`   auto-morphism
 
 이는 정말 강력한 선언인데, 정말 유용하게도 참이다.
  
-.. proof:Theorem:: :math:`n` -차원의 동형 공간
+.. proof:theorem:: :math:`n` -차원의 동형 공간
 
     체 :math:`\mathcal{F}`  위에서 정의된, :math:`\text{dim}(V) = n \in \mathcal{N}` 인 벡터 공간 :math:`V` 에 대해, 
     다음이 성립한다.

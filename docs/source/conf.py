@@ -52,3 +52,20 @@ latex_elements = {
 \setmonofont{Noto Sans Mono CJK KR}
     '''
 }
+
+
+proof_theorem_types = {
+   "algorithm": "Algorithm",
+   "conjecture": "Conjecture",
+   "corollary": "Corollary",
+   "definition": "Definition",
+   "example": "Example",
+   "lemma": "Lemma",
+   "observation": "Observation",
+   "proof": "Proof",
+   "property": "Property",
+   "theorem": "Theorem",
+   "corollary" : "Corollary",
+   "axiom" : "Axiom",
+   "axiomschema" : "Axiom Schema"
+}
