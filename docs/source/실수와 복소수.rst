@@ -12,7 +12,7 @@
 
 ### 연산(Operation)
 
-### 데데킨트 절단을 통한 실수 구축(Construction of Real number with Dedekind Cut)
+### 데디킨트 절단을 통한 실수 구축(Construction of Real number with Dedekind Cut)
 
 ### 확장된 실수(Extended Real Number)
 
