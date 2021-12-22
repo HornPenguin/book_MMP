@@ -659,5 +659,6 @@ ZFC 공리계에서 이러한 상황을 살펴볼 수 있다.
 
 .. rubric:: 각주
 
+.. [#가능_세계] 해당 집합에 대해, 논리학에서는 가능세계라는 표현을 쓰기도 한다.
 .. [#진리표] 열은 최소 :math:`n+1` 에서 더 많아질 수도 있다. 복잡한 복합 명제는 하위 복합 명제를 중간열에 추가하기도 하기 때문이다.   
 .. [#SkeweNumber] Skewes, Stanley. "On the Difference π (x)- lix (II)." Proceedings of the London Mathematical Society 3.1 (1955): 48-70.
