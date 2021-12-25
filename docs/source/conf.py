@@ -9,7 +9,7 @@ project = 'Mathematical Methods for Physicsts'
 copyright = '2021, Hyun Seong, Kim'
 author = 'Hyun Seong, Kim'
 
-release = '2.7.1'
+release = '0.0.1'
 version = '0.1.0'
 
 # -- General configuration
