@@ -3,8 +3,6 @@
 ********************
 
 
-
-
 선형 변환(Linear Transform)
 =====================================
 
@@ -65,8 +63,8 @@
 
     .. math::
 
-        x \sim x, \forall x \in S
-        x \sim y \Rightarrow y \sim x, \forall x ,y \in S
+        x \sim x, \forall x \in S \\
+        x \sim y \Rightarrow y \sim x, \forall x ,y \in S \\
         x \sim y, y \sim x \Rightarrow x \sim z, \forall x,y,z \in S
 
     이를 만족하는 :math:`\sim` 를 :math:`S` 위에서 정의된 **동치 관계** 라 부른다. 
@@ -92,7 +90,11 @@
         [x] := \{y | x \sim y, \forall y \in S \}
             
 
-이러한 동치류는 결국 어느 한 원소와 동치 관계인 원소 집합을 의미하므로 이러한 원소를 표기에 반영해 :math:`[x]` 과 같이 표기한다. 그런데 동치 관계의 특성상 이러한 대표원은 :math:`x`  하나만 가능한 것이 아니라, 동치류 안의 모든 원소들이 대표원으로써 사용 될 수 있다. 다시 말해, :math:`a \in [x]` 라면, :math:`[a] = [x]` 인 것이다. 즉, 정의된 동치 관계로 구분되는 경우에 이들은 사실상 같은 원소들인 것이다.
+이러한 동치류는 결국 어느 한 원소와 동치 관계인 원소 집합을 의미하므로 이러한 원소를 표기에 반영해 :math:`[x]` 과 같이 표기한다. 
+그런데 동치 관계의 특성상 이러한 대표원은 :math:`x`  하나만 가능한 것이 아니라, 동치류 안의 모든 원소들이 대표원으로써 사용 될 수 있다. 
+이 성질은 공체 관계의 추이성으로 바로 유도할 수 있다.
+다시 말해, :math:`a \in [x]` 라면, :math:`[a] = [x]` 인 것이다. 
+즉, 정의된 동치 관계로 구분되는 경우에 이들은 사실상 같은 원소들인 것이다.
 
 선형 변환
 --------------------
@@ -104,8 +106,8 @@
 
     .. math::
 
-        {\bf x,y }\in V, c \in \mathcal{F}
-        T({\bf x+y}) = T({\bf x})+T({\bf y })
+        {\bf x,y }\in V, c \in \mathcal{F}\\
+        T({\bf x+y}) = T({\bf x})+T({\bf y })\\
         T(c {\bf x} ) = c T({\bf x})
 
     이 때, 함수 :math:`T` 를 :math:`V \rightarrow W` 의 **선형 변환** 이라 한다.
@@ -116,10 +118,13 @@
 
 위를 만족하는 선형 변환은 다음을 만족한다.
 
-.. proof:theorem:: Properties of Linear transform
+.. proof:theorem:: 선형 변환의 성질
+
+    선형 변환 :math:`T: V \rightarrow W`
+
 
     * :math:`T({0_V}) = 0_W` 
-    * :math:`T(c {\bf x} + {\bf y}) = cT( {\bf x}) +T({\bf y})` 
+    * :math:`T(c {\bf x} + {\bf y}) = cT( {\bf x}) + T({\bf y})` 
     * :math:`T(- {\bf y}) =-T({\bf y})``
 
 .. proof:corollary:: 1
@@ -178,7 +183,7 @@ bijective                  iso-morphism
 bijective & :math:`V =W`   auto-morphism
 ========================  =================
 
-이러한 사상이 존재하는 두 공간에 대해, 두 공간이 서로 **동형 (Isomorphic)** 이다라 한다.
+이러한 사상이 존재하는 두 공간에 대해, 두 공간이 서로 **동형** (Isomorphic)이다라 한다.
 
 .. proof:definition:: 벡터 공간의 동형 Isomorphic Vector space
 
@@ -241,3 +246,10 @@ bijective & :math:`V =W`   auto-morphism
 행렬
 ===============
 
+
+
+문제
+================
+
+
+* 
