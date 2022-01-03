@@ -165,7 +165,7 @@
 
 3 차원 실수 공간( :math:`\mathbb{R}^3` )의 벡터 :math:`\bf{a} = (4,3,5)` 를 생각해보자, 
 일반적으로 각각의 성분들이 :math:`x,y,z` 축 방향 성분의 크기를 나타내는 것을 잘 알고 있다. 
-이 축을 나타내는 벡터를 :math:`({\bf{e}}\_i)_{i=1}^3` 이라 해보자
+이 축을 나타내는 벡터를 :math:`({\bf{e}}_i)_{i=1}^3` 이라 해보자
 
 .. math:: 
         
@@ -220,39 +220,39 @@
 ==========================================
 
 어떠한 벡터 공간 :math:`V`의 원소 :math:`\bf{v}` 의 경우 
-그 벡터 공간 안의 다른 벡터들 :math:`\{ \bf{v}\_{i}\}\_{i=1}^n` 과 
-계수 :math:`(\lambda\_{i})\_{i=1}^n` 에 대해 다음과 같이 선형 결합으로 표현할 수 있다.
+그 벡터 공간 안의 다른 벡터들 :math:`\{ \bf{v}_{i}\}_{i=1}^n` 과 
+계수 :math:`(\lambda_{i})_{i=1}^n` 에 대해 다음과 같이 선형 결합으로 표현할 수 있다.
 
 
 .. math::
     
-    \bf{v} = \sum\_{i=1}^{n} \lambda\_i \bf{v}\_i
+    \bf{v} = \sum_{i=1}^{n} \lambda_i \bf{v}_i
 
 
-이때, 계수들 :math:`(\lambda\_{i})\_{i=1}^n` 가 유일할 필요는 없다. 
+이때, 계수들 :math:`(\lambda_{i})_{i=1}^n` 가 유일할 필요는 없다. 
 이는 유일할 수도 유일하지 않을 수도 있다. 이러한 유일성의 유무를 이용해 주어진 벡터 집합의 특성을 정의할 수 있다.
 
 .. proof:definition:: 선형 독립 Linearly Independence
 
 
-    벡터 공간 :math:`V` 와 그 부분 집합 :math:`S` 에 대해, :math:`S = \{ \bf{x}\_1, \dots, \bf{x}\_n \}` 는 다음을 만족할 때, 
+    벡터 공간 :math:`V` 와 그 부분 집합 :math:`S` 에 대해, :math:`S = \{ \bf{x}_1, \dots, \bf{x}_n \}` 는 다음을 만족할 때, 
     **선형 독립** (linearly independent)이라 한다.
 
     :math:`{\forall \bf{v}} \in V` 에 대해, 
-    오직 하나의 :math:`(\lambda\_{i})\_{i=1}^n` 만이 존재해 다음을 만족한다.
+    오직 하나의 :math:`(\lambda_{i})_{i=1}^n` 만이 존재해 다음을 만족한다.
 
     .. math::
 
-        \bf{v} = \sum\_{i=1}^{n} \lambda\_i \bf{v}\_i
+        \bf{v} = \sum_{i=1}^{n} \lambda_i \bf{v}_i
 
-    다른 경우, :math:`(\lambda\_{i})\_{i=1}^n` 가 유일하지 않은 경우에, 이를 :math:`S` 가 **선형 종속** (linear dependent)이라 한다.         
+    다른 경우, :math:`(\lambda_{i})_{i=1}^n` 가 유일하지 않은 경우에, 이를 :math:`S` 가 **선형 종속** (linear dependent)이라 한다.         
 
 
 이 정의 외에 다른 정의로도 선형 독립을 정의할 수 있다. 
 
 
-:math:`\mathbf{0} = \sum\_{i=1}^N \lambda\_i \mathbf{v}\_i` 을 만족하는 
-:math:`\{ \lambda\_i \}\_{i=1}^N` 이 유일하게 존재한다.
+:math:`\mathbf{0} = \sum_{i=1}^N \lambda_i \mathbf{v}_i` 을 만족하는 
+:math:`\{ \lambda_i \}_{i=1}^N` 이 유일하게 존재한다.
 
 
 
@@ -266,8 +266,8 @@
 * 선형 종속 집합 :math:`S` 는 :math:`|S| > 0` 을 만족한다.
 * 선형 독립 집합 :math:`S` 과 벡터, :math:`\mathbf{v}\in V` 에 대해, :math:`\mathbf{v}\in \text{span}(S)` 이면, :math:`S \cup \{ \mathbf{v} \}` 는 선형 종속이다.
 *  선형 독립 집합 :math:`S` 과 벡터, :math:`\mathbf{v}\in V` 에 대해,:math:`\mathbf{v}\notin \text{span}(S)` 이면, :math:`S \cup \{ \mathbf{v} \}` 는 선형 독립이다.
-* :math:`S\_1 \subseteq S\_2 \subseteq V` 에 대해, :math:`S\_1` 이 선형 종속이면, :math:`S\_2` 도 선형 종속이다.
-* :math:`S\_1 \subseteq S\_2 \subseteq V` 에 대해, :math:`S\_2` 이 선형 독립이면, :math:`S\_1` 도 선형 독립이다.
+* :math:`S_1 \subseteq S_2 \subseteq V` 에 대해, :math:`S_1` 이 선형 종속이면, :math:`S_2` 도 선형 종속이다.
+* :math:`S_1 \subseteq S_2 \subseteq V` 에 대해, :math:`S_2` 이 선형 독립이면, :math:`S_1` 도 선형 독립이다.
 
 
 
@@ -276,8 +276,8 @@
 
 어떤 체 :math:`\bf{v}` 위에 정의된 벡터 공간 :math:`V` 에서, 
 내부의 부분 집합 :math:`S` 의 원소들의 선형 결합으로 벡터 공간 :math:`V` 의 어느 원소 :math:`\bf{v}` 를 
-:math:`\mathbb{F}` 의 원소에 속하는 계수 :math:`(\lambda\_{i})\_{i=1}^n` 와 함께 표현할 수 있음을 알았다. 
-또, 이러한 :math:`S` 를 적절히 잡으면 각각의 벡터의 선형 표현을 유일한 :math:`(\lambda\_{i})\_{i=1}^n` 로 표현할 수 있음을 알 수 있다. 
+:math:`\mathbb{F}` 의 원소에 속하는 계수 :math:`(\lambda_{i})_{i=1}^n` 와 함께 표현할 수 있음을 알았다. 
+또, 이러한 :math:`S` 를 적절히 잡으면 각각의 벡터의 선형 표현을 유일한 :math:`(\lambda_{i})_{i=1}^n` 로 표현할 수 있음을 알 수 있다. 
 이를 선형 독립적인 벡터 집합이라 한다. 만약, :math:`S` 의 원소들이 벡터 공간 전체의 원소를 선형 결합으로 유일하게 나타낼 수 있다면, 
 이러한 :math:`S` 를 통해서 벡터 공간을 분류하고 성질을 나타내어 볼 수 있다. 이러한 :math:`S` 를 **기저** (Basis)라 부른다.
 
@@ -289,15 +289,15 @@
 
     .. math::
 
-        \Longleftrightarrow \forall {\bf{v}} \in V, \exists ! (\lambda\_1, \dots, \lambda\_n) \text{    s.t  } {\bf{v}} = \sum\lambda\_i  {\bf{v}}\_i \\
-        S= \\{ {\bf{v}}\_i \\}\_{i=1}^N 
+        \Longleftrightarrow \forall {\bf{v}} \in V, \exists ! (\lambda_1, \dots, \lambda_n) \text{    s.t  } {\bf{v}} = \sum\lambda_i  {\bf{v}}_i \\
+        S= \\{ {\bf{v}}_i \\}_{i=1}^N 
 
 이러한 기저 조건을 만족하는 벡터 집합은 유일하지 않다. 주어진 기저로 부터 다른 기저를 만들수도 있고 상황에 맞게 적절한 기저를 선택할 수도 있다. 
 다만 각각의 공간에 대해 공통적으로 많이 쓰이는 표준 기저들이 존재한다.
 
-* :math:`\mathbb{F}^n` 의 표준 기저: :math:`\\{ {\bf{e\_i}}\_{i=1}^n \\}, {\bf{e}\_i} = (0, \dots, 0, 1, 0, \dots ,0) =(\delta\_{1i}, \dots, \delta\_{(i-1)i}, \delta\_{ii}, \delta\_{(i+1)i}, \dots ,\delta\_{Ni})`
-* :math:`M\_{m \times n}(\mathbb{F})` 의 표준 기저: :math:`\\{ E^{ij} \\}, (1 \le i \le m, 1 \le j \le n )` , :math:`(E^{ij})\_{kl} = \delta\_{ik} \delta\_{jl}`
-* :math:`\mathcal{P}\_{n}(\mathbb{F})` 의 표준 기저: :math:`S= \\{ 1, x, x^2, \dots, x^n\\}`
+* :math:`\mathbb{F}^n` 의 표준 기저: :math:`\\{ {\bf{e_i}}_{i=1}^n \\}, {\bf{e}_i} = (0, \dots, 0, 1, 0, \dots ,0) =(\delta_{1i}, \dots, \delta_{(i-1)i}, \delta_{ii}, \delta_{(i+1)i}, \dots ,\delta_{Ni})`
+* :math:`M_{m \times n}(\mathbb{F})` 의 표준 기저: :math:`\\{ E^{ij} \\}, (1 \le i \le m, 1 \le j \le n )` , :math:`(E^{ij})_{kl} = \delta_{ik} \delta_{jl}`
+* :math:`\mathcal{P}_{n}(\mathbb{F})` 의 표준 기저: :math:`S= \\{ 1, x, x^2, \dots, x^n\\}`
 * :math:`\mathcal{P}(\mathbb{F})` 의 표준 기저: :math:`S= \\{ 1, x, x^2, \dots, \\}`
 
 그런데 벡터 공간을 이루는 원소가 동일하다 하더라도 체가 달라지면, 벡터 공간의 구조도 달라지게 된다. 
@@ -430,41 +430,41 @@
 
 정의에 따라 다음을 알 수 있다.
 
-* :math:`f\_i \in \mathcal{P}\_n(\mathbb{F})`
-* :math:`f\_i (c\_j) = \delta\_{ij} =\begin{cases} 1 & i=j \\\\ 0 &  i \neq j \\ \end{cases}`
+* :math:`f_i \in \mathcal{P}_n(\mathbb{F})`
+* :math:`f_i (c_j) = \delta_{ij} =\begin{cases} 1 & i=j \\\\ 0 &  i \neq j \\ \end{cases}`
 
-이때, 라그랑주 보간법은 이러한 라그랑주 다항식이 :math:`\mathcal{P}\_n(\mathbb{F})` 의 기저를 만족해 
-:math:`\\{c\_0, c\_1, \dots, c\_n \\}` 점을 모두 지나는 유일한 :math:`n` 차 다항식을 찾을 수 있다는 것을 기반으로 한다. 
+이때, 라그랑주 보간법은 이러한 라그랑주 다항식이 :math:`\mathcal{P}_n(\mathbb{F})` 의 기저를 만족해 
+:math:`\\{c_0, c_1, \dots, c_n \\}` 점을 모두 지나는 유일한 :math:`n` 차 다항식을 찾을 수 있다는 것을 기반으로 한다. 
 이는 벡터 공간의 대체 정리를 통해 증명할 수 있다.
 
-먼저, :math:`\\{ f\_0, f\_1, \dots, f\_n \\}` 의 선형 독립성을 증명하면,
+먼저, :math:`\\{ f_0, f_1, \dots, f_n \\}` 의 선형 독립성을 증명하면,
 
 .. math:: 
     
-    \sum\_{i=0}^n a\_i f\_i (x)=0, \forall x \in \mathbb{F}
+    \sum_{i=0}^n a_i f_i (x)=0, \forall x \in \mathbb{F}
     
-에 대해, :math:`x \in \\{c\_0, c\_1, \dots, c\_n \\}` 이라면, 다음을 알 수 있다.
+에 대해, :math:`x \in \\{c_0, c_1, \dots, c_n \\}` 이라면, 다음을 알 수 있다.
 
 .. math::
     
-    \sum\_{i=0}^n a\_i f\_i (c\_j)=a\_j 
+    \sum_{i=0}^n a_i f_i (c_j)=a_j 
 
-따라서 선형 독립 조건을 만족하는 계수 :math:`\{ a\_i \}\_{i=0}^n` 은 :math:`a\_i = 0, \forall i` 임을 알 수 있다. 
-따라서 :math:`\\{ f\_0, f\_1, \dots, f\_n \\}` 은 :math:`\mathcal{P}\_n(\mathbb{F})` 의 선형 독립 부분집합이다.
+따라서 선형 독립 조건을 만족하는 계수 :math:`\{ a_i \}_{i=0}^n` 은 :math:`a_i = 0, \forall i` 임을 알 수 있다. 
+따라서 :math:`\\{ f_0, f_1, \dots, f_n \\}` 은 :math:`\mathcal{P}_n(\mathbb{F})` 의 선형 독립 부분집합이다.
 
-:math:`\mathcal{P}\_n(\mathbb{F})` 의 차원=기저 집합의 크기는 :math:`n+1` 이고 
-선형 독립 부분 집합 :math:`|\\{ f\_i\\}\_{i=0}^n| = n+1` 임을 알 수 있다. 
-여기서 대체 정리의 따름 정리 2-2를 이용하면, :math:`\\{ f\_i\\}\_{i=0}^n`가 :math:`\mathcal{P}\_n(\mathbb{F})` 의 기저 조건을 만족함을 알 수 있다.
+:math:`\mathcal{P}_n(\mathbb{F})` 의 차원=기저 집합의 크기는 :math:`n+1` 이고 
+선형 독립 부분 집합 :math:`|\\{ f_i\\}_{i=0}^n| = n+1` 임을 알 수 있다. 
+여기서 대체 정리의 따름 정리 2-2를 이용하면, :math:`\\{ f_i\\}_{i=0}^n`가 :math:`\mathcal{P}_n(\mathbb{F})` 의 기저 조건을 만족함을 알 수 있다.
 
-따라서 :math:`\mathcal{P}\_n(\mathbb{F})` 에 속한 모든 :math:`n` 차 다항 함수는 :math:`\\{ f\_i\\}\_{i=0}^n` 의 선형 결합으로 표현할 수 있다.
+따라서 :math:`\mathcal{P}_n(\mathbb{F})` 에 속한 모든 :math:`n` 차 다항 함수는 :math:`\\{ f_i\\}_{i=0}^n` 의 선형 결합으로 표현할 수 있다.
 
 이를 이용하면 다음을 보일 수 있는데, :math:`n` 차 다항 함수 :math:`g` 에 대해,
 
 .. math::
     
-    g = \sum\_{i=0}^n \lambda\_i f\_i\\
-    g(c\_j) = \sum\_{i=0}^n \lambda\_i f\_i = \lambda\_j\\
-    g = \sum\_{i=0}^n g(c\_j) \_i f\_i
+    g = \sum_{i=0}^n \lambda_i f_i\\
+    g(c_j) = \sum_{i=0}^n \lambda_i f_i = \lambda_j\\
+    g = \sum_{i=0}^n g(c_j) _i f_i
 
 형태로 유일한 선형 결합 표현을 찾을 수 있고, 
 이를 이용해, :math:`n+1` 개의 지점을 지나는 
@@ -485,9 +485,9 @@
 
 .. math::
     \begin{aligned}
-    {a}\_{11} x\_1 +  {a}\_{12} x\_2 + {a}\_{13} x\_3 +{a}\_{14} x\_4 = b\_1   \\\\
-    {a}\_{21} x\_1 +  {a}\_{22} x\_2 + {a}\_{23} x\_3 +{a}\_{24} x\_4 = b\_1 \\\\
-    {a}\_{31} x\_1 +  {a}\_{32} x\_2 + {a}\_{33} x\_3 +{a}\_{34} x\_4 = b\_1 
+    {a}_{11} x_1 +  {a}_{12} x_2 + {a}_{13} x_3 +{a}_{14} x_4 = b_1   \\\\
+    {a}_{21} x_1 +  {a}_{22} x_2 + {a}_{23} x_3 +{a}_{24} x_4 = b_1 \\\\
+    {a}_{31} x_1 +  {a}_{32} x_2 + {a}_{33} x_3 +{a}_{34} x_4 = b_1 
     \end{aligned}
 
 간단하게, 다음과 같이 표현 가능하다.
@@ -498,22 +498,22 @@ $$\bf{A} \cdot x = b$$
 
     {\bf{A}} = 
         \begin{pmatrix} 
-        a\_{11} & a\_{12} & a\_{13} & a\_{14} \\\\
-        a\_{21} & a\_{22} & a\_{23} & a\_{24} \\\\
-        a\_{31} & a\_{32} & a\_{33} & a\_{34} \\\\
+        a_{11} & a_{12} & a_{13} & a_{14} \\\\
+        a_{21} & a_{22} & a_{23} & a_{24} \\\\
+        a_{31} & a_{32} & a_{33} & a_{34} \\\\
         \end{pmatrix}, 
         {\bf{x}} = 
         \begin{pmatrix}
-        x\_1 \\\\
-        x\_2 \\\\
-        x\_3 \\\\
-        x\_4 
+        x_1 \\\\
+        x_2 \\\\
+        x_3 \\\\
+        x_4 
         \end{pmatrix}, 
         {\bf{b}} = 
         \begin{pmatrix}
-        b\_1 \\\\
-        b\_2 \\\\
-        b\_3 
+        b_1 \\\\
+        b_2 \\\\
+        b_3 
         \end{pmatrix}
 
 이런 방정식을 선형계(Linear system)이라 부른다. 
@@ -544,7 +544,7 @@ $$\bf{A} \cdot x = b$$
 
     환 :math:`R`에 대해 각 행 :math:`i \in \\{ 1, 2, 3, \dots, m \\}` , 
     열 :math:`j \in \\{ 1, 2, 3, \dots, n \\}` 의 순서쌍 :math:`(i,j)` 에 
-    환의 원소 :math:`A\_{ij} \in R` 를 대응 시키는 함수 :math:`A = A( (i,j) ) = A\_{ij}` 를 
+    환의 원소 :math:`A_{ij} \in R` 를 대응 시키는 함수 :math:`A = A( (i,j) ) = A_{ij}` 를 
     환 :math:`R`위에서 정의된 행렬 :math:`A` 라 한다.
 
 다시말해, 행렬이란 덧셈과 곱셈이 정의된 원소들을 순서쌍에 대응시킨 함수라 볼 수 있다. 
@@ -556,11 +556,11 @@ $$\bf{A} \cdot x = b$$
 
 .. math::
     
-    M\_{m \times n}(\mathbb{F})
+    M_{m \times n}(\mathbb{F})
 
 
 이는 대수구조 :math:`\mathbb{F}` 위에서 정의된 :math:`m \times n` 행렬을 의미한다. 
-따라서 :math:`A \in M\_{m \times n}(\mathbb{F})` 는 :math:`A` 의 원소들이 대수구조 :math:`\mathbb{F}` 의 원소들이고, 
+따라서 :math:`A \in M_{m \times n}(\mathbb{F})` 는 :math:`A` 의 원소들이 대수구조 :math:`\mathbb{F}` 의 원소들이고, 
 :math:`A` 의 크기가 :math:`m \times n` 이라는 뜻이다.
 
 일반적으로 많이 정의되는 공간은 체(Field)이다. 
@@ -574,21 +574,21 @@ $$\bf{A} \cdot x = b$$
 기초 연산
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-체 :math:`\mathbb{F}` 위에서 정의된 행렬 :math:`\mathbf{A,B} \in M\_{m \times n}(\mathbb{F})` 과 :math:`c \in \mathbb{F}` 대해, 
+체 :math:`\mathbb{F}` 위에서 정의된 행렬 :math:`\mathbf{A,B} \in M_{m \times n}(\mathbb{F})` 과 :math:`c \in \mathbb{F}` 대해, 
 행렬의 덧셈, 스칼라 곱 그리고 같음은 다음과 같이 정의된다.
 
 .. proof:definition:: 행렬의 덧셈 Addition of Matrix
 
     .. math::
 
-        (\mathbf{A+ B})\_{ij} = (A\_{ij}  + B\_{ij})
+        (\mathbf{A+ B})_{ij} = (A_{ij}  + B_{ij})
 
 
 .. proof:definition:: 행렬의 스칼라 곱 Scalar Multiplication of Matrix
 
     .. math::
         
-        c \cdot \mathbf{A}\_{ij} = (c \cdot A\_{ij})
+        c \cdot \mathbf{A}_{ij} = (c \cdot A_{ij})
 
 
 
@@ -597,19 +597,19 @@ $$\bf{A} \cdot x = b$$
     .. math::
 
         \mathbf{A} = \mathbf{B}\\
-        \leftrightarrow  A\_{ij} =  B\_{ij}, \forall i,j
+        \leftrightarrow  A_{ij} =  B_{ij}, \forall i,j
 
 
 
 
-이 연산들과 함께 :math:`M\_{m \times n}(\mathbb{F})` 는 벡터 공간의 공리계를 만족하므로 벡터 공간을 형성한다.
+이 연산들과 함께 :math:`M_{m \times n}(\mathbb{F})` 는 벡터 공간의 공리계를 만족하므로 벡터 공간을 형성한다.
 
-:math:`0` 행렬은 다음과 같이 정의되고 이는 :math:`M\_{m \times n}(\mathbb{F})` 의 :math:`0` 벡터가 된다.
+:math:`0` 행렬은 다음과 같이 정의되고 이는 :math:`M_{m \times n}(\mathbb{F})` 의 :math:`0` 벡터가 된다.
 
 
 .. proof:definition:: 영 행렬 Zero matrix
 
-    행렬 :math:`A \in M\_{m \times n} (\mathbb{F})`에 대해, 
+    행렬 :math:`A \in M_{m \times n} (\mathbb{F})`에 대해, 
     다음을 만족하는 행렬 :math:`A` 를 영행렬이라고 부른다.
 
     .. math::
@@ -621,12 +621,12 @@ $$\bf{A} \cdot x = b$$
 
 .. proof:definition:: 행렬의 전치 Transpose
 
-    행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})` 에 대해, 
-    행렬 :math:`{\bf B} \in M\_{n \times m} (\mathbb{F})` 가 다음을 만족한다.
+    행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F})` 에 대해, 
+    행렬 :math:`{\bf B} \in M_{n \times m} (\mathbb{F})` 가 다음을 만족한다.
 
     .. math::
 
-        \bf B\_{ij} = A\_{ji}
+        \bf B_{ij} = A_{ji}
 
 
     이때, 행렬 :math:`\bf B` 를 행렬 :math:`\bf A` 의 **전치** (Transpose)라 부르고, :math:`\bf A^t` 로 표기한다.
@@ -636,17 +636,17 @@ $$\bf{A} \cdot x = b$$
 .. math::
     {\bf{A}} = 
     \begin{pmatrix} 
-    a\_{11} & a\_{12} & a\_{13} & a\_{14} \\\\
-    a\_{21} & a\_{22} & a\_{23} & a\_{24} \\\\
+    a_{11} & a_{12} & a_{13} & a_{14} \\\\
+    a_{21} & a_{22} & a_{23} & a_{24} \\\\
     \end{pmatrix}\\
 
     \rightarrow
     {\bf{A}^t} = 
     \begin{pmatrix} 
-    a\_{11} & a\_{21}  \\\\
-    a\_{12} & a\_{22}  \\\\
-    a\_{13} & a\_{23}  \\\\
-    a\_{14} & a\_{24}  \\\\
+    a_{11} & a_{21}  \\\\
+    a_{12} & a_{22}  \\\\
+    a_{13} & a_{23}  \\\\
+    a_{14} & a_{24}  \\\\
     \end{pmatrix} 
 
 
@@ -655,23 +655,23 @@ $$\bf{A} \cdot x = b$$
 
 .. proof:definition:: 행렬곱
 
-    행렬 :math:`{\bf A} \in M\_{m \times n} (\mathbb{F})` , :math:`{\bf B} \in M\_{n \times p} (\mathbb{F})` 에 대해, 
+    행렬 :math:`{\bf A} \in M_{m \times n} (\mathbb{F})` , :math:`{\bf B} \in M_{n \times p} (\mathbb{F})` 에 대해, 
     이 두 행렬의 행렬곱 :math:`{\bf C}` 은 다음과 같다.
 
     .. math::
 
           {\bf C} := {\bf A} {\bf B} 
-          c\_{ij} = \sum_{k=1}^n a\_{ik}b\_{kj}
+          c_{ij} = \sum_{k=1}^n a_{ik}b_{kj}
           i = 1 ,2, \dots m
           j = 1 ,2, \dots p
           k = 1 ,2, \dots n
 
-정의에 의해 :math:`{\bf C} \in M\_{np}(\mathbb{F})` 임을 알 수 있다. 
+정의에 의해 :math:`{\bf C} \in M_{np}(\mathbb{F})` 임을 알 수 있다. 
 이 곱은 우리가 아는 일반적인 곱셈과 다른 점이 많다. 
 먼저, 정의에 의해 교환 법칙이 성립하지 않는다. 일반적으로 :math:`\mathbf{AB - BA} \neq 0` 이고, 
 특수한 경우 :math:`\mathbf{AB - BA} = 0` 를 만족하는 Commuting matrix라 부른다. 
 
-벡터와 행렬의 곱은 벡터 :math:`{\bf x } \in M\_{m \times n}` 를 :math:`m` 이나 :math:`n` 이 1인 행렬임을 알면 행렬곱이라는 것을 알 수 있다. 
+벡터와 행렬의 곱은 벡터 :math:`{\bf x } \in M_{m \times n}` 를 :math:`m` 이나 :math:`n` 이 1인 행렬임을 알면 행렬곱이라는 것을 알 수 있다. 
 이 때. :math:`\bf A x` 에서 :math:`\bf A` 의 행의 갯수가 :math:`\bf x` 의 길이와 같아야한다.
 
 이러한 정의는 행렬을 통해 **선형 변환** (Linear transformation)을 나타내기 위함으로 이러한 행렬 곱을 통해 여러 실제 선형 변환을 실수 연산으로 계산할 수 있다. 
@@ -696,7 +696,7 @@ $$\bf{A} \cdot x = b$$
 어느 임의의 행렬 :math:`\bf A \in M_{m \times n}(\mathbb {C})` 에 대해, 
 .. math::
     
-    \bf {A}^{\dagger}\_{ij} = \overline{A}\_{ij}
+    \bf {A}^{\dagger}_{ij} = \overline{A}_{ij}
 
 를 의미한다. ( :math:`A^{\*}` 표기도 쓴다.) 
 
@@ -755,11 +755,11 @@ $$AB - BA$$
 반대로, :math:`\text{tr}(C) = 0` 인 행렬은 항상 :math:`AB-BA` 꼴로 분해할 수 있다. (증명은 나중에 하도록하자)
 
 정사각 행렬의 경우 연산의 항등원이 존재하는 데, 이를 항등 행렬(identity matrix)라고 하며, 
-:math:`\bf I` 로 표기한다. :math:`n` 차원의 정사각 행렬 공간의 항등 행렬은 :math:`{\bf I}\_n \in M\_{n}` 로도 표기한다.
+:math:`\bf I` 로 표기한다. :math:`n` 차원의 정사각 행렬 공간의 항등 행렬은 :math:`{\bf I}_n \in M_{n}` 로도 표기한다.
 
 .. math::
     
-    {\bf I}\_n =
+    {\bf I}_n =
     \begin{pmatrix}
     1&0 & 0&&0 \\\\
     0& 1& 0& \ldots &0 \\\\
@@ -780,13 +780,13 @@ $$AB - BA$$
 
 
 항등 행렬은 단위 행렬(Unit matrix)라고도 한다. 이 항등 행렬은 행렬곱에 대해 교환 가능하다. 
-즉,어떤 임의의 행렬 :math:`{\bf A} \in M\_n (\mathbb{F})` 에 대해 다음이 성립한다.
+즉,어떤 임의의 행렬 :math:`{\bf A} \in M_n (\mathbb{F})` 에 대해 다음이 성립한다.
 
 .. math:: 
     
-    {\bf A I\_n - I\_n A }=0
+    {\bf A I_n - I_n A }=0
 
-스칼라 행렬은 항등 행렬에 스칼라를 곱한 형태 :math:`c {\bf I}\_n` 의 행렬로 행렬 합과 곱에서 스칼라처럼 사용 가능하다.
+스칼라 행렬은 항등 행렬에 스칼라를 곱한 형태 :math:`c {\bf I}_n` 의 행렬로 행렬 합과 곱에서 스칼라처럼 사용 가능하다.
 
 정사각 행렬끼리의 곱은 곱하기 전과 동일한 차원으로 닫혀있기 때문에, 동일한 행렬의 연속적인 곱을 수행 할 수 있다. 
 이때, 우리가 체에서 차수에대해 한 것처럼 이러한 곱에 대해 비슷한 행렬을 정의할 수 있다. 
@@ -794,7 +794,7 @@ $$AB - BA$$
 
 .. proof:definition:: 멱영 행렬 Nilpotent Matrix
 
-    정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})` 에 대해,
+    정사각 행렬 :math:`{\bf A}\in M_{n}(\mathbb{F})` 에 대해,
 
     .. math::
         
@@ -810,7 +810,7 @@ $$AB - BA$$
 
 .. proof:definition:: 대칭 행렬 Symmetirc Matrix
 
-    정사각 행렬 :math:`{\bf A}\in M\_{n}(\mathbb{F})` 와 :math:`i,j = 1, 2, \dots n` 에 대해,
+    정사각 행렬 :math:`{\bf A}\in M_{n}(\mathbb{F})` 와 :math:`i,j = 1, 2, \dots n` 에 대해,
 
     .. math::
         

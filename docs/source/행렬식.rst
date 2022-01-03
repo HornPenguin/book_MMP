@@ -17,7 +17,7 @@
 
 .. proof:definition:: k-선형 형식 k-linear form)
 
-    체 :math:`\mathbb{F}` 위에 정의된 벡터 공간 집합 :math:`\\{ V\_\alpha \\}\_{\alpha =1}^k` 에 대해, 
+    체 :math:`\mathbb{F}` 위에 정의된 벡터 공간 집합 :math:`\\{ V_\alpha \\}_{\alpha =1}^k` 에 대해, 
     함수 :math:`f: V_1 \times V_2 \times \dots \times V_k \rightarrow \mathbb{F}` 가 모든 좌표 각각에 대해 선형일 때, 
     함수 :math:`f` 를 **k-선형 형식** (k-linear form)이라 부른다. 
 
